@@ -9682,3 +9682,43 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* FIX: Mobile scroll issue on hero section */
+@media (max-width: 768px) {
+  .owl-carousel.home-slider {
+    height: auto;
+    touch-action: auto;
+    -ms-touch-action: auto;
+  }
+  
+  .owl-carousel.home-slider .slider-item {
+    height: auto;
+    min-height: 500px;
+    touch-action: auto;
+    -ms-touch-action: auto;
+    overflow: visible;
+  }
+  
+  .slider-text {
+    height: auto;
+    min-height: 500px;
+    touch-action: auto;
+    -ms-touch-action: auto;
+  }
+  
+  .one-third.img {
+    touch-action: auto;
+    -ms-touch-action: auto;
+    overflow: visible;
+  }
+  
+  .slider-item .overlay {
+    pointer-events: none;
+  }
+  
+  /* Allow scrolling on hero image area */
+  body {
+    touch-action: auto;
+    -ms-touch-action: auto;
+  }
+}
