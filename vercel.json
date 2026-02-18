@@ -1,0 +1,11 @@
+{
+  "buildCommand": null,
+  "framework": null,
+  "outputDirectory": ".",
+  "rewrites": [
+    {
+      "source": "/:path((?!.*\\.[^/]+$).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
